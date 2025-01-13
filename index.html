@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Distance Converter</h1>
+    <form>
+        <label for="distance">Distance:</label>
+        <input type="number" id="distance" required>
+        <span><h4>FROM...</h4></span>
+        <select id="from-unit">
+            <option value="km">Kilometers (km)</option>
+            <option value="m">Meters (m)</option>
+            <option value="mi">Miles (mi)</option>
+            <option value="yd">Yards (yd)</option>
+            <option value="ft">Feet (ft)</option>
+        </select>
+        <span><h4>TO...</h4></span>
+        <select id="to-unit">
+            <option value="km">Kilometers (km)</option>
+            <option value="m">Meters (m)</option>
+            <option value="mi">Miles (mi)</option>
+            <option value="yd">Yards (yd)</option>
+            <option value="ft">Feet (ft)</option>
+        </select>
+        <button id="convert-btn">Convert</button>
+        <div style="padding-top: 20px;">
+            <button id="clear-btn">Clear</button>
+           </div>
+        <p id="result"></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
